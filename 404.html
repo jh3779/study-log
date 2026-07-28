@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>글을 찾을 수 없습니다 · study log</title><meta name="description" content="배운 것을 교육·교과목 단위로 회고합니다."><script>
+    // FOUC 방지: 저장된 테마를 렌더 전에 적용
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script><link rel="stylesheet" href="/study-log/_astro/about.IWAaHvNb.css"></head> <body> <header class="site-header"> <a class="brand" href="/study-log/">study log</a> <span class="spacer"></span> <a class="nav" href="/study-log/status/">교과목 현황</a> <a class="nav" href="/study-log/about/">소개</a> <button class="theme-toggle" type="button" aria-label="테마 전환" data-theme-toggle>◐ 테마</button> </header>  <div class="wrap"> <div class="empty" style="max-width:560px;margin:40px auto"> <div style="font-size:34px">🔍</div> <div class="t">글을 찾을 수 없습니다</div> <div class="s">주소가 잘못됐거나 발행이 취소된 글입니다.</div> <a href="/study-log/" style="display:inline-flex;align-items:center;justify-content:center;margin-top:14px;min-height:44px;padding:0 24px;background:var(--c-primary);color:var(--c-on-primary);border-radius:999px;font-size:14px;font-weight:600;text-decoration:none">홈으로</a> </div>  </div>  <footer class="site-footer">
+study log — 학습 회고록. 원고·디자인: <span class="mono">study-blog</span> 저장소에서 관리.
+</footer> <script>
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-theme-toggle]');
+      if (!b) return;
+      var root = document.documentElement;
+      var dark = root.getAttribute('data-theme') === 'dark' ||
+        (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+      var next = dark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (err) {}
+    });
+  </script> </body> </html>

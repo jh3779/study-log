@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>소개 · study log</title><meta name="description" content="배운 것을 교육·교과목 단위로 회고합니다."><script>
+    // FOUC 방지: 저장된 테마를 렌더 전에 적용
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script><link rel="stylesheet" href="/study-log/_astro/about.IWAaHvNb.css"></head> <body> <header class="site-header"> <a class="brand" href="/study-log/">study log</a> <span class="spacer"></span> <a class="nav" href="/study-log/status/">교과목 현황</a> <a class="nav" href="/study-log/about/">소개</a> <button class="theme-toggle" type="button" aria-label="테마 전환" data-theme-toggle>◐ 테마</button> </header>  <div class="wrap"> <div class="content" style="display:flex;flex-direction:column;gap:20px;max-width:560px"> <div> <h1 style="font-size:22px;margin:0 0 6px">우지훈</h1> <p class="muted" style="margin:0;font-size:14px">정규 교육과 개인 공부에서 배운 것을 카테고리·교과목 단위로 회고합니다. 트러블슈팅(삽질) 기록을 가장 중요하게 생각합니다.</p> </div> <div style="display:flex;gap:6px;flex-wrap:wrap"> <span class="chip" style="cursor:default">Python</span><span class="chip" style="cursor:default">LangChain</span><span class="chip" style="cursor:default">LangGraph</span><span class="chip" style="cursor:default">MCP</span><span class="chip" style="cursor:default">A2A</span><span class="chip" style="cursor:default">FastAPI</span><span class="chip" style="cursor:default">RAG</span> </div> <div> <h2 style="font-size:15px;margin:0 0 10px">학습 타임라인</h2> <div style="display:flex;flex-direction:column;gap:10px"> <a class="postcard" href="/study-log/courses/2026-lgcns-ai-campus/"> <span style="display:flex;gap:8px;align-items:center"> <span style="font-weight:700;flex:1;font-size:14.5px">🎓 LG CNS AI 캠퍼스 — MCP 기반 Agentic AI 서비스 개발자 과정</span> <span class="chip on" style="min-height:0;padding:2px 9px;font-size:10.5px;cursor:default">수강 중</span> </span> <span class="meta" style="font-size:11px">2026.07 ~ 2027.01 · 첫 회고 준비 중</span> </a><a class="postcard" href="/study-log/courses/self-study/"> <span style="display:flex;gap:8px;align-items:center"> <span style="font-weight:700;flex:1;font-size:14.5px">📚 개인 공부</span> <span class="chip on" style="min-height:0;padding:2px 9px;font-size:10.5px;cursor:default">상시</span> </span> <span class="meta" style="font-size:11px">상시 · 첫 회고 준비 중</span> </a> <div style="border:1px dashed var(--c-outline-variant);border-radius:12px;padding:14px;text-align:center;font-size:12.5px;color:var(--c-on-surface-variant)">
+다음 교육이 여기에 쌓입니다
+</div> </div> </div> <a class="chip" href="https://github.com/jh3779" style="align-self:flex-start;text-decoration:none">GitHub ↗</a> </div> </div>  <footer class="site-footer">
+study log — 학습 회고록. 원고·디자인: <span class="mono">study-blog</span> 저장소에서 관리.
+</footer> <script>
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-theme-toggle]');
+      if (!b) return;
+      var root = document.documentElement;
+      var dark = root.getAttribute('data-theme') === 'dark' ||
+        (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+      var next = dark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (err) {}
+    });
+  </script> </body> </html>
